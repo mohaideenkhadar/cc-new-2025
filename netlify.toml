@@ -1,0 +1,11 @@
+[build]
+    command = "cd client && npm install && npm build"
+    publich = "client/.next"
+
+[[redirects]]
+    from = "/api/*"
+    to = "/.netlify/functions/server/:splat"
+    status = 200
+
+[functions]
+    directory = "server"
