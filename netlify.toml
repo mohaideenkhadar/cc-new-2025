@@ -1,5 +1,5 @@
 [build]
-    command = "cd client && npm install && npm build"
+    command = "cd client && npm install && npm run build"
     publich = "client/.next"
 
 [[redirects]]
